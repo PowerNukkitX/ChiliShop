@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.powernukkitx</groupId>
+    <artifactId>ChiliShop</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <inceptionYear>2022</inceptionYear>
+    <organization>
+        <name>PowerNukkitX</name>
+        <url>https://github.com/PowerNukkitX</url>
+    </organization>
+
+    <repositories>
+        <repository>
+            <id>onebone</id>
+            <url>http://jenkins.onebone.me/plugin/repository/everything/</url>
+        </repository>
+    </repositories>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.powernukkitx</groupId>
+            <artifactId>powernukkitx</artifactId>
+            <version>1.6.0.0-PNX</version>
+        </dependency>
+        <dependency>
+            <groupId>me.onebone</groupId>
+            <artifactId>economyapi</artifactId>
+            <version>1.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>cn.smallaswater</groupId>
+            <artifactId>land</artifactId>
+            <scope>system</scope>
+            <version>0</version>
+            <systemPath>${project.basedir}/libs/Land_v1.7.8.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.bekvon.bukkit</groupId>
+            <artifactId>residence</artifactId>
+            <scope>system</scope>
+            <version>0</version>
+            <systemPath>${project.basedir}/libs/residence-1.0-SNAPSHOT.jar</systemPath>
+        </dependency>
+    </dependencies>
+</project>

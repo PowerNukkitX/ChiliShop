@@ -107,17 +107,17 @@ cp-use-translated-item-name: "Use translated item name"
 cp-tax: "Tax"
 
 # texts on sign
-buyshop-text1: "[&l&6 Buying &r]"
-buyshop-text2: "{ITEM}"
-buyshop-text3: "{OWNER} - &e{PRICE}"
-buyshop-text4: "{STOCK}"
-buyshop-stock: "stock: &a&l{STOCK_SPACE}"
+buyshop-text1: "&f [&l&6 Buying &r&f]"
+buyshop-text2: "&f {ITEM}"
+buyshop-text3: "&f {OWNER} - &e{PRICE}"
+buyshop-text4: "&f {STOCK}"
+buyshop-stock: "&f stock: &a&l{STOCK_SPACE}"
 
-sellshop-text1: "[&l&e Selling &r]"
-sellshop-text2: "{ITEM}"
-sellshop-text3: "{OWNER} - &6{PRICE}"
-sellshop-text4: "{STOCK}"
-sellshop-stock: "free: &b&l{STOCK_SPACE}"
+sellshop-text1: "&f [&l&e Selling &r&f]"
+sellshop-text2: "&f {ITEM}"
+sellshop-text3: "&f {OWNER} - &6{PRICE}"
+sellshop-text4: "&f {STOCK}"
+sellshop-stock: "&f free: &b&l{STOCK_SPACE}"
 
 # translation of enchantments
 E-0: "Protection"

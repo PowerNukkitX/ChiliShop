@@ -107,17 +107,17 @@ cp-use-translated-item-name: "使用翻译的物品名"
 cp-tax: "税率"
 
 # texts on sign
-buyshop-text1: "[&l&6 出售 &r]"
-buyshop-text2: "{ITEM}"
-buyshop-text3: "{OWNER} - &e{PRICE}"
-buyshop-text4: "{STOCK}"
-buyshop-stock: "当前库存: &a&l{STOCK_SPACE}"
+buyshop-text1: "&f [&l&6 出售 &r&f]"
+buyshop-text2: "&f {ITEM}"
+buyshop-text3: "&f {OWNER} - &e{PRICE}"
+buyshop-text4: "&f {STOCK}"
+buyshop-stock: "&f 当前库存: &a&l{STOCK_SPACE}"
 
-sellshop-text1: "[&l&e 回收 &r]"
-sellshop-text2: "{ITEM}"
-sellshop-text3: "{OWNER} - &6{PRICE}"
-sellshop-text4: "{STOCK}"
-sellshop-stock: "空闲库存: &b&l{STOCK_SPACE}"
+sellshop-text1: "&f [&l&e 回收 &r&f]"
+sellshop-text2: "&f {ITEM}"
+sellshop-text3: "&f {OWNER} - &6{PRICE}"
+sellshop-text4: "&f {STOCK}"
+sellshop-stock: "&f 空闲库存: &b&l{STOCK_SPACE}"
 
 # translation of enchantments
 E-0: "保护"

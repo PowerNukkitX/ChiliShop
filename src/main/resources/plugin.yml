@@ -1,0 +1,9 @@
+name: ChiliShop
+main: cn.innc11.chilishop.ChiliShop
+version: "1.3.2"
+author: hyperrain, PowerNukkitX-Group
+api: ["1.0.0"]
+load: POSTWORLD
+depend: ["EconomyAPI"]
+softdepend: ["Residence", "Land"]
+website: "https://github.com/PowerNukkitX/ChiliShop"
