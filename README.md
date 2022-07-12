@@ -8,6 +8,8 @@
 
 2.我们基于java17编译，添加了对[PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX)核心的支持
 
+### 请注意此插件无法直接使用PepperShop的配置文件!
+
 ## 图片 Preview
 
 ![overview](pictures/overview.png)
