@@ -1,20 +1,12 @@
-# [PepperShop](https://github.com/innc11/PepperShop)
+# [ChiliShop](https://github.com/PowerNukkitX/ChiliShop)
 
-## Stopped maintenance! / 停止更新!
+[ChiliShop](https://github.com/PowerNukkitX/ChiliShop)(辣椒商店) 是一个PowerNukkitX插件,基于[PepperShop](https://github.com/asforest/PepperShop)开发,PepperShop又是基于 [QuickShopX](https://github.com/innc11/QuickShopX) 开发,QuickShopX又是基于是由原作者 [WetABQ](https://github.com/WetABQ) 的QuickShop插件所开发而来
 
-[English](README_EN.md)
+## ChiliShop做了什么？
 
-一个Nukkit插件,基于 [QuickShopX](https://github.com/innc11/QuickShopX) 开发,QuickShopX又是基于是由原作者 [WetABQ](https://github.com/WetABQ) 的QuickShop插件所开发而来
+1.我们添加了对最新的StringItem物品的支持，现在插件可以售卖基于StringItem的物品，包括核心新更新的物品，插件自定义物品
 
-## PepperShop的特性
-
-1. 增加对GAC插件的处理
-2. 全面整合化的语言文件，99%可见文字都可以自定义修改，(除了加载语言文件时提示的那一句)
-3. 同时支持Land领地插件和Residence领地插件
-4. 去掉了潜行模式下破坏商店的选项
-5. 合并了全息物品显示开关到滑动条上，设置完毕即时生效
-6. 修复英文语言文件中的一些单词和语法问题
-7. 没有安装任何领地类插件时op默认可以打开所有人箱子
+2.我们基于java17编译，添加了对[PowerNukkitX](https://github.com/PowerNukkitX/PowerNukkitX)核心的支持
 
 ## 图片 Preview
 
