@@ -101,6 +101,14 @@ public class ShopConfig extends BaseConfig
 			shopData.shopRandomId = config.getLong(key+".shopRandomId");
 
 			String nbtTagText = config.getString(key+".item.nbtTag");
+			//转换旧的数字ID到字符串ID
+			if (config.exists(key+".item.itemId")){
+				int oldId = config.getInt(key+".item.itemId");
+				String newId = Item.get(oldId).getNamespaceId();
+				config.remove(key+".item.itemId");
+				config.set(key+".item.namespaceId",newId);
+				config.save();
+			}
 			String namespaceId = config.getString(key+".item.namespaceId");
 			int metadata = config.getInt(key+".item.metadata");
 			byte[] nbtTag = !nbtTagText.isEmpty() ? Base64.getDecoder().decode(nbtTagText) : null;
