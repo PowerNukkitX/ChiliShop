@@ -30,29 +30,14 @@ public class HologramItemListener implements Listener, ReloadableListener
 	ChiliShop ins;
 	public ArrayBlockingQueue<Pair<Collection<Player>, DataPacket>> queue;
 	
-	PluginTask<ChiliShop> sendDataPacketTask = new PluginTask<ChiliShop>(ChiliShop.ins)
-	{
+	PluginTask<ChiliShop> sendDataPacketTask = new PluginTask<>(ChiliShop.ins) {
 		@Override
-		public void onRun(int currentTicks) 
-		{
-			int packetSendingDelay;
-			
-			while (true) 
-			{
-				try {
-					Pair<Collection<Player>, DataPacket> x = queue.take();
-					
-					Server.broadcastPacket(x.key, x.value);
-
-					int interval = ChiliShop.ins.pluginConfig.hologramItemEffect;
-
-					packetSendingDelay = 1*1000 / interval;
-					packetSendingDelay = Math.min(Math.max(packetSendingDelay, 0), 5000);
-
-					if(packetSendingDelay>0)
-						Thread.sleep(packetSendingDelay);
-				}
-				catch (InterruptedException e) {e.printStackTrace();}
+		public void onRun(int currentTicks) {
+			try {
+				Pair<Collection<Player>, DataPacket> x = queue.take();
+				Server.broadcastPacket(x.key, x.value);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
 			}
 		}
 	};
@@ -61,7 +46,7 @@ public class HologramItemListener implements Listener, ReloadableListener
 	{
 		ins = main;
 		reload();
-		main.getServer().getScheduler().scheduleDelayedTask(sendDataPacketTask, 0, true);
+		main.getServer().getScheduler().scheduleRepeatingTask(sendDataPacketTask, ChiliShop.ins.pluginConfig.hologramItemEffect, true);
 	}
 	
 	@EventHandler

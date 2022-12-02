@@ -36,7 +36,7 @@ public class PluginConfig extends BaseConfig
 	@PluginControlPanel.PresentInForm(lang = LangNodes.cp_interaction_time)
 	public int interactionTimeout;
 
-	@Default(intValue = 150, min = 0, max = 1001, step = 10)
+	@Default(intValue = 100, min = 0, max = 1001, step = 10)
 	@PluginControlPanel.PresentInForm(lang = LangNodes.cp_packet_send_ps)
 	@PluginControlPanel.UpdateCallbackInForm(methodName = "updateHologramItemEffect")
 	public int hologramItemEffect;
