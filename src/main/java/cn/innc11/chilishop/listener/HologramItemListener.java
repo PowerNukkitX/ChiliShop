@@ -36,8 +36,8 @@ public class HologramItemListener implements Listener, ReloadableListener
 			try {
 				Pair<Collection<Player>, DataPacket> x = queue.take();
 				Server.broadcastPacket(x.key, x.value);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
+			} catch (InterruptedException ignored) {
+
 			}
 		}
 	};
