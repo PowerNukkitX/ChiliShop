@@ -34,8 +34,12 @@ public class HologramItemListener implements Listener, ReloadableListener
 		@Override
 		public void onRun(int currentTicks) {
 			try {
-				Pair<Collection<Player>, DataPacket> x = queue.take();
-				Server.broadcastPacket(x.key, x.value);
+				int count = 0;
+				while (!queue.isEmpty() && count < ChiliShop.ins.pluginConfig.hologramItemEffect) {
+					Pair<Collection<Player>, DataPacket> x = queue.take();
+					Server.broadcastPacket(x.key, x.value);
+					count++;
+				}
 			} catch (InterruptedException ignored) {
 
 			}
@@ -46,7 +50,7 @@ public class HologramItemListener implements Listener, ReloadableListener
 	{
 		ins = main;
 		reload();
-		main.getServer().getScheduler().scheduleRepeatingTask(sendDataPacketTask, ChiliShop.ins.pluginConfig.hologramItemEffect, true);
+		main.getServer().getScheduler().scheduleRepeatingTask(sendDataPacketTask, 20, true);
 	}
 	
 	@EventHandler

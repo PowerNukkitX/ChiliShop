@@ -117,9 +117,9 @@ interaction-timeout: 5000
 # The size of the queue holding the datapacks to be sent to client, double it if hologram-item can not be shown normally (like not be removed when teleport between worlds)
 packet-queue-capacity: 10000
 
-# Sending interval (tick) of holographic item packets
-# It is usually recommended to set to 100 directly, if there is an item deviation, please adjust it to between 30~100
-hologram-item-effect: 100
+# The speed of the holographic item function to send data packets
+# It is usually recommended to set to 1000 directly, if there is an item deviation, please adjust it to between 30~100
+hologram-item-effect: 1000
 
 # Whether to interact with the Residence plugin (requires the Residence plugin to be installed)
 link-with-residence-plugin: true
